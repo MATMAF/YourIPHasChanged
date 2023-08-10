@@ -19,10 +19,7 @@ config_ip = config.IP_ADDRESS
 while True:
     ip = requests.get("https://whatsmyipaddress.dev/ip").text
 
-    print(f"Config IP : {config_ip}")
-
     if ip == config_ip:
-        print("SLEEP")
         time.sleep(config.SLEEP_TIME)
     else:
         sender_name = 'YourIPHasChanged'
@@ -49,8 +46,6 @@ while True:
         server.sendmail(sender_email, [receiver_email], msg.as_string())
 
         server.quit()
-
-        print("SEND EMAIL")
 
         ChangeIPInConfig(ip)
 
