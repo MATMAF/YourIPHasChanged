@@ -3,7 +3,7 @@ import config
 import time
 import smtplib
 from email.mime.text import MIMEText
- 
+
 def ChangeIPInConfig(ip):
     with open('config.py', 'r') as file:
         lines = file.readlines()
