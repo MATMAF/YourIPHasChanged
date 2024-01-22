@@ -2,5 +2,5 @@ services:
   YourIPHasChanged:
     image: mathieumafille/youriphaschanged:latest
     environment:
-      - EMAIL_RECEIVER="email@example.com"
+      - EMAIL_RECEIVER=email@example.com
       - SLEEP_TIME=150
