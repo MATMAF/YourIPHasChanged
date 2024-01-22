@@ -9,7 +9,7 @@ cd YourIPHasChanged
 
 Edit `docker-compose.yml`
 
-Replace `EMAIL_RECEIVER="email@example.com"` with your email address
+Replace `EMAIL_RECEIVER=email@example.com` with your email address
 
 ### Start docker container
 
