@@ -1,4 +1,4 @@
-FROM python:3.11.4-slim
+FROM python:slim
 
 ENV EMAIL_RECEIVER=email@example.com
 ENV SLEEP_TIME=150
