@@ -23,7 +23,7 @@ while True:
         sender_name = 'YourIPHasChanged'
         receiver_email = config.EMAIL_RECEIVER
         subject = "Your IP has changed"
-        message = f"Your IP has changed from {config_ip} to {ip}\n\nPowered by @MATMAF\nhttps://www.mat.run"
+        message = f"Your IP has changed from {config_ip} to {ip}\n\nPowered by @MATMAF\nhttps://matmaf.xyz"
         SendMail = requests.get(f"https://mail.mat.run/api?name={sender_name}&receiver={receiver_email}&sub={subject}&message={message}")
         ChangeIPInConfig(ip)
         config_ip = ip
