@@ -1,6 +1,7 @@
 services:
   YourIPHasChanged:
-    image: ghcr.io/matmaf/youriphaschanged:latest
+    container_name: YourIPHasChanged
+    image: ghcr.io/matmaf/youriphaschanged:main
     restart: always
     environment:
       - EMAIL_RECEIVER=email@example.com
