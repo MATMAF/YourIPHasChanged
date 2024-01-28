@@ -1,6 +1,6 @@
 services:
   YourIPHasChanged:
-    image: mathieumafille/youriphaschanged:latest
+    image: ghcr.io/matmaf/youriphaschanged:latest
     restart: always
     environment:
       - EMAIL_RECEIVER=email@example.com
